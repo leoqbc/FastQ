@@ -9,6 +9,10 @@ use FastQ\Resolver\SlimCallableResolver;
 
 use Closure;
 
+/**
+ * TODO: Make this guy async
+ * using ReactPHP maybe?
+ */
 class Worker
 {
     protected $results;
@@ -25,7 +29,7 @@ class Worker
     
     const ERROR_LEVEL_LOW = 2;
 
-    public function __construct(Jobs $jobs, $error_level = 2, ?CallableResolver $callableResolver = null)
+    public function __construct(Jobs $jobs, $error_level = ERROR_LEVEL_LOW, ?CallableResolver $callableResolver = null)
     {
         $this->jobs = $jobs;
         $this->error_level = $error_level;

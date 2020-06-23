@@ -93,5 +93,10 @@ var_dump($worker->getCompleted());
 var_dump($worker->getFailures());
 ```
 
+# Todo
+Make the consumer/worker commands
+How to implement async in Worker.php? ReactPHP?
+
+
 # Author
 Leonardo Tumadjian
