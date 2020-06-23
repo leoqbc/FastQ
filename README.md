@@ -3,9 +3,11 @@ A simple queue processor wrote in PHP simple and fast. (Work in progress)
 
 #### Proposal
 
-id |   channel 	|               action	                    |      data		| 	status 		| 	tries   |   after
-1      payment      MyApp\\Sales\\Payment::process            { "var": 12 }		  0			     1         6542134421
-2      payment      Payment:payment                           { "var": 12 }		  1			     1         6542134421
+| id | channel | action                         | data          | status | tries | after      |
+|----|---------|--------------------------------|---------------|--------|-------|------------|
+| 1  | payment | MyApp\\Sales\\Payment::process | { "var": 12 } | 0      | 1     | 6542134421 |
+| 2  | payment | Payment:payment                | { "var": 12 } | 1      | 1     | 6542134421 |
+
 
 data: json variables(no complex objects)
 
