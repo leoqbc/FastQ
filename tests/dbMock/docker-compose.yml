@@ -1,0 +1,20 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:5.5
+    container_name: mysql_fastq
+    ports:
+      - 3311:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: fastqrocks
+      MYSQL_DATABASE: fastq
+
+  # In case you want to test MariaDB
+  # mariadb:
+  #   image: mariadb:10.5.2
+  #   container_name: mariadb_fastq
+  #   ports:
+  #     - 3310:3306
+  #   environment:
+  #     MYSQL_ROOT_PASSWORD: fastqrocks
+  #     MYSQL_DATABASE: fastq

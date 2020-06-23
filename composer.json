@@ -1,0 +1,26 @@
+{
+    "name": "fastq/fastq",
+    "description": "Fast PHP queue to simple proccess later",
+    "autoload": {
+        "psr-4": {
+            "FastQ\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.3",
+        "doctrine/instantiator": "^1.3.0",
+        "psr/container": "^1.0",
+        "vlucas/phpdotenv": "^4.1",
+        "react/socket": "^1.4"
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/fakeClasses/FakeClass.php",
+            "tests/fakeClasses/FakeClassContainer.php",
+            "tests/fakeClasses/FakeContainer.php"
+        ]
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"
+    }
+}
